@@ -120,6 +120,7 @@ install_bins | output "$LOG_FILE"
 
 # Add ffmpeg
 header "Installing ffmpeg"
+tar -xvf $bp_dir/vendor/ffmpeg-3.2.4-64bit-static.tar.gz
 
 restore_cache() {
   local cache_status="$(get_cache_status)"
