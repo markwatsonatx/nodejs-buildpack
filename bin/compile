@@ -118,6 +118,9 @@ install_bins() {
 header "Installing binaries"
 install_bins | output "$LOG_FILE"
 
+# Add ffmpeg
+header "Installing ffmpeg"
+
 restore_cache() {
   local cache_status="$(get_cache_status)"
 
